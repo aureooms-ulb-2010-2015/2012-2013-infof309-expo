@@ -1,0 +1,76 @@
+
+
+Bonjour!
+
+Dans ce fichier vous trouverez toutes les informations nécessaires.
+
+
+CONTENU
+=======
+
+	Il y a 3 programmes sur le Bureau :
+
+		- ConDensAte, démonstration de l'algorithme ConDensAtion avec ajustement des paramètres;
+		- FishTube, démonstration de l'ensemble des algorithmes étudiés durant le projet;
+		- FaceTube, démonstration de la détection, reconnaissance et suivi de visage.
+
+
+	Les dossiers 'xml' et 'data' sur le Bureau sont indispensables au bon fonctionnement de certains algorithmes.
+
+
+	Le code source se trouve dans ~/Qt\ pro, réparti en 4 projets Qt:
+	
+		-lib309, le plus important, la bibliothèque qui contient la plupart des algorithmes développés durant le projet (dont ConDensAtion);
+		-condensate, l'interface graphique pour le programme ConDensAte;
+		-fishtube, l'interface graphique pour le programme FishTube;
+		-facetube, l'interface graphique pour le programme FaceTube + l'algorithme de détection de visage.
+
+
+	Les scripts bash sur le Bureau sont des utilitaires pour compiler/mettre à jour le projet.
+
+	Des exemples de vidéos à utiliser avec les programmes se trouvent dans le dossier ~/Videos.
+
+
+UTILISATION
+===========
+
+	De manière générale:
+
+		- F1  : jouer/pause
+		- F2  : choisir le fichier vidéo source à traiter
+		- F3  : choisir un flux vidéo via une adresse IP
+		- F4  : choisir la première caméra de la liste comme source
+		- F5  : recommencer le traitement depuis le début
+		- F11 : basculer fenêtre/plein écran
+
+	Pour ConDensAte :
+
+		- lancer le programme
+		- choisir une vidéo contenant des poissons à l'aide du sélecteur (raccourci F2)
+		- ajuster les paramètres (bouton en haut à droit, raccourci F7)
+
+	Pour FishTube :
+
+		- lancer le programme
+		- choisir une vidéo contenant des poissons à l'aide du sélecteur (raccourci F2)
+		- choisir un traitement à l'aide du second sélecteur
+
+
+	Pour FaceTube :
+		
+		- lancer le programme
+		- choisir la webcam ou une vidéo contenant des visages à l'aide du sélecteur (raccourcis F2, F3, F4)
+		- ajouter ou enlever des visages à reconnaître à l'aide des boutons '-' et '+' (raccourcis F7 et F8)
+
+
+NOTES
+=====
+
+	L'algorithme utilisé pour ConDensAte se nomme CustomCondensationTemplateV4 dans FishTube.
+
+	Il y a quelques erreurs (sans doute dues à l'utilisation de la machine virtuelle) :
+		
+		- le mode plein écran n'est pas complet
+		- en lançant FishTube avec l'algorithme CustomCondensationV1, il plante
+		(sauf si lancé depuis la console : CTRL + ALT + T, cd Desktop; ./FishTube;)
+
